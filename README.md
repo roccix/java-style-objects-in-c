@@ -17,7 +17,6 @@ About an hour later — including time spent reading and asking around — this 
 - `Person.c` — defines `struct Person` with an `int age` plus two function pointers, and the `static` implementations they point to.
 - `draft.c` — driver / `main` that calls `create_person(20)`.
 
-**Known incomplete.** Because the struct is fully opaque in the header, from `draft.c` I can't yet do `Daniele->set_age(...)` — the compiler doesn't know the layout. The natural next step is the split public/private struct: put a `struct Person` in the header with only the function pointers, and keep an extended `PersonImpl` (carrying `age`) inside `Person.c`, casting between them at boundaries. Left for another sitting.
 
 ## Not done, intentionally
 
