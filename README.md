@@ -2,6 +2,9 @@
 
 A one-hour experiment: building Java-flavored objects in plain C.
 
+## Warnings
+This README is written by CLAUDE OPUS 4.7
+
 ## The story
 
 I took the written part of my C exam and made a mistake with `static` — I hadn't fully internalized what internal linkage really means or where it belongs. The oral is tomorrow (July 10), and instead of just re-reading the topic, I decided to nail it down by *using* it: could I take `static` (plus opaque structs, plus function pointers) and build Java-style encapsulation in C? Private field, public method, called on the object itself?
