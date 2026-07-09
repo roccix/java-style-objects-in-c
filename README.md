@@ -28,4 +28,3 @@ About an hour later — including time spent reading and asking around — this 
 
 The pattern isn't original. After I built it I learned it's essentially the idea behind GObject/GTK, CPython's `PyObject_HEAD`, and Chapter 1 of Axel Schreiner's *Object-Oriented Programming with ANSI-C* (1993, freely available online). Good reading if I ever come back to extend this.
 
-The interesting technical wrinkle worth remembering: casting between the public and extended structs sits in the strict-aliasing gray zone. Practically fine on every real compiler; formally murky in the standard. If I want ironclad standard compliance, the escape hatch is a `union` that puts both structs in "common initial sequence" territory.
