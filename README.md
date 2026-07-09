@@ -17,7 +17,8 @@ About an hour later — including time spent reading and asking around — this 
 - `Person.c` — defines `struct Person` with an `int age` plus two function pointers, and the `static` implementations they point to.
 - `draft.c` — driver / `main` that calls `create_person(20)`.
 
-
+## Warnings
+I know there is a little memory leak :-)
 ## Not done, intentionally
 
 - No Makefile. For now: `gcc draft.c Person.c -o test`.
